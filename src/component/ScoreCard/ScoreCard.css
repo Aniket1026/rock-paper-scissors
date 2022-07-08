@@ -1,0 +1,32 @@
+.Scorecard-box {
+    width: auto;
+    height: 25vh;
+    min-width: 50%;
+    border-radius: 5px;
+    border: 3px solid cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.options {
+    list-style: none;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+.score {
+    background-color: aliceblue;
+    margin: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score-display {
+    color: black;
+    list-style: none;
+    font-size: xx-large;
+}
