@@ -67,3 +67,11 @@ footer {
        outline: inherit;
    }
 
+   @media screen and (max-width:550px) {
+
+    .rules-icon {
+            width: 250px;
+            height: 250px;
+        }
+   }
+
