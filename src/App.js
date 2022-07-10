@@ -3,19 +3,19 @@ import React,{useState} from 'react'
 import './App.css';
 import Move from './component/Moves/Move';
 import ScoreCard from './component/ScoreCard/ScoreCard';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from './component/Footer/Footer';
 
-// const [score, setScore] = (0);
 
 
 function App() {
+  const [score, setScore] = useState(0);
   return (
-      <div className="App">
-        <ScoreCard />
+    <div className="App">
+      <ScoreCard score={score} setScore={setScore} />
 
-      <Move />
-      </div>
-    
+      <Move score={score} setScore={setScore} />
+      <Footer setScore={setScore} />
+    </div>
   );
 }
 

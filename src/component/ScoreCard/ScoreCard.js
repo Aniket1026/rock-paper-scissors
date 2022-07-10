@@ -2,7 +2,7 @@ import React from "react";
 
 import './ScoreCard.css'
 
-const ScoreCard = () => {
+const ScoreCard = ({score}) => {
     return (
       <div className="Scorecard-box">
         <ul className="options">
@@ -13,7 +13,7 @@ const ScoreCard = () => {
         <div className="score">
           <ul className="score-display">
             <li>SCORE</li>
-            <li>10</li>
+            <li>{score}</li>
           </ul>
         </div>
       </div>
